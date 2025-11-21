@@ -18,13 +18,15 @@ function ProtectedRoute({ children, soloAdmin = false, soloUser = false }) {
 // Lo envio a la pagina de "produtos"
   if(soloAdmin && permiso !== "admin")
     {
+    alert("Debe estar logueado como administrador, salga de su sesión de usuario.");
     return <Navigate to="/productos" />;
   }
 // Si trata de ingresar a una pagina de compras y no tiene permiso "user" (es un "admin")
-// Lo envio a la pagina de "produtos"
+// Lo envio a la pagina de "administracion"
   if(soloUser && permiso !== "user")
     {
-    return <Navigate to="/productos" />;
+    alert("Debe estar logueado como usuario, salga de su sesión de administrador.");
+    return <Navigate to="/administracion" />;
   }
 // 
   return children;

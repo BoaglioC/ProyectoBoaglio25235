@@ -32,7 +32,6 @@ const habilitarCarrito= ()=>{
         }
       else if (estaLogueado && permiso=="admin"){
         alert("Esta logueado como admin. Debe desloguearse e ingresar con sus credenciales de usuario");
-
       }
       else {
         alert("Debe estar logueado como usuario");

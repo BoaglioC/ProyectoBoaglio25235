@@ -12,7 +12,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 
 
 function Header() {
-  const { user, estaLogueado, logout} = useAuthContext();
+  const { estaLogueado, logout, permiso} = useAuthContext();
   const { totalItems, vaciarCarrito } = useContext(CarritoContext); 
   const navigate = useNavigate();
 
@@ -48,7 +48,7 @@ function Header() {
                   <Nav.Link as={Link} to="/administracion" style={{margin:"auto"}} >Admin</Nav.Link>
                   <Nav.Link as={Link} to="/carrito" style={{fontSize:"1.5rem", color:"black",  margin:"auto"}}>
                   {/* Si esta logueado muestro el total de elementos comprados */}
-                   <i className="bi bi-cart4"> { estaLogueado ? totalItems : ' ' } </i>                 
+                   <i className="bi bi-cart4"> { (estaLogueado && permiso === "user" )? totalItems : ' ' } </i>                 
                   </Nav.Link>
                   {/* Si esta si inicio sesion habilita el boton de "Cerrar Sesion", caso contrario
                   habilita el boton de Ingresar para poder ir a la pagina de Login */}
