@@ -47,9 +47,8 @@ function Header() {
                   <Nav.Link as={Link} to="/productos"  style={{margin:"auto"}}>Productos</Nav.Link>
                   <Nav.Link as={Link} to="/administracion" style={{margin:"auto"}} >Admin</Nav.Link>
                   <Nav.Link as={Link} to="/carrito" style={{fontSize:"1.5rem", color:"black",  margin:"auto"}}>
-                   <i className="bi bi-cart4"> {totalItems} </i>
-                  
-                  
+                  {/* Si esta logueado muestro el total de elementos comprados */}
+                   <i className="bi bi-cart4"> { estaLogueado ? totalItems : ' ' } </i>                 
                   </Nav.Link>
                   {/* Si esta si inicio sesion habilita el boton de "Cerrar Sesion", caso contrario
                   habilita el boton de Ingresar para poder ir a la pagina de Login */}
@@ -57,7 +56,6 @@ function Header() {
                     <button onClick={cerrarSesion} className="btn btn-outline-dark btn-sm">  Cerrar Sesión  </button>
                     </div>): (<div style={{margin:"auto"}} >
                     <button onClick= { ()=>{navigate('/ingresa')} } className="btn btn-outline-dark btn-sm" > Ingresar</button> </div>)
-
                   }
                 
                 </Nav>
