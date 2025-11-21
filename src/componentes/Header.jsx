@@ -53,9 +53,9 @@ function Header() {
                   {/* Si esta si inicio sesion habilita el boton de "Cerrar Sesion", caso contrario
                   habilita el boton de Ingresar para poder ir a la pagina de Login */}
                   { (estaLogueado) ? (<div  style={{margin:"auto"}}>
-                    <button onClick={cerrarSesion} className="btn btn-outline-dark btn-sm">  Cerrar Sesión  </button>
+                    <button onClick={cerrarSesion} className="btn btn-outline-dark btn-sm">  Log out </button>
                     </div>): (<div style={{margin:"auto"}} >
-                    <button onClick= { ()=>{navigate('/ingresa')} } className="btn btn-outline-dark btn-sm" > Ingresar</button> </div>)
+                    <button onClick= { ()=>{navigate('/ingresa')} } className="btn btn-outline-dark btn-sm" > Log in</button> </div>)
                   }
                 
                 </Nav>
