@@ -1,0 +1,16 @@
+.bg-myBodyColor {
+    background-color: #c5b5b5;
+}
+
+
+.bg-myBackground {
+    background-color: #a04f4f;
+}
+
+.milogo{
+    width:5rem;
+}
+
+.my-viewport-height {
+  min-height: 20vh;
+}
