@@ -179,7 +179,7 @@ const CrudProductos = () => {
                 required
               />
             </Form.Group>
-           {/*  <Form.Group className="mb-2">
+           <Form.Group className="mb-2">
               <Form.Label>Stock</Form.Label>
               <Form.Control
                 type="number"
@@ -187,7 +187,7 @@ const CrudProductos = () => {
                 onChange={e => setForm({ ...form, stock: Number(e.target.value) })}
                 required
               />
-            </Form.Group> */}
+            </Form.Group>
             <Form.Group className="mb-2">
               <Form.Label>Imagen (URL)</Form.Label>
               <Form.Control
