@@ -10,7 +10,7 @@ function Footer(){
             <Container>
                 <Row>
                     <Col>Página con fines educativos</Col>
-                    <Col>Versión 21/11/2025</Col>
+                    <Col>Versión 22/11/2025</Col>
                     <Col >
                     {/* Iconos de Bootstrap Icons */}
                     <a href="#"> <i className="bi bi-facebook" style={{fontSize:"1.5rem", color:"black", margin:"0.5rem"}}> </i> </a>

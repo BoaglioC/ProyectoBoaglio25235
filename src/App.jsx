@@ -48,6 +48,7 @@ function App()  {
                       <Route  path="/administracion" element={<ProtectedRoute soloAdmin={true}>  <Administracion/> </ProtectedRoute>}/>
 
                       {/* En caso de que la ruta no exista */}
+                      {/* En la computadora funciona, pero Vercel me envia a una página de error 404 */}
                       <Route path="/*" element={<NotFound />} /> 
 
                     </Routes>
