@@ -1,5 +1,8 @@
 
 // Basado en el documento de la clase 9
+// La diferencia es que agrego un estado de permiso.
+// De acuerdo al valor de permiso (admin o user) me permite restringir o no los accesos a ciertas partes
+// de la aplicación.
 
 import React, { createContext, useState, useContext } from 'react';
 // Crear el contexto de autenticación

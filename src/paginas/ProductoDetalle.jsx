@@ -11,11 +11,11 @@ import { useAuthContext } from '../context/AuthContext';
 
 
 function ProductoDetalle() { 
- // Voy a usar el context del carrito
-// Pero solo quiero la posibilidad de ver si esta logueado
+// Voy a usar el context del carrito
+// Pero solo quiero la posibilidad de agregar cosas al carrito
 const {agregarCarrito}=useContext( CarritoContext);
 // Voy a usar el context de autentificacion 
-// Pero solo quiero la posibilidad de agregar cosas al carrito
+// Pero solo quiero la posibilidad de ver si esta logueado y su permiso
 const {estaLogueado,permiso}=useAuthContext();
 
 /*Voy a traer el id de la ruta que le pase al Link "to={'/Productos/${producto.id}'}"*/

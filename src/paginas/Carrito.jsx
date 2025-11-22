@@ -8,8 +8,7 @@ function Carrito() {
     // Del CarritoContext me interesa el carrito, agragar cantidades,  la posibilidad de vaciarlo
     // Y el total de la compra
     const { carrito, agregarCarrito, decrementarCarrito,  borrarItemCarrito, vaciarCarrito, totalCompra, totalItems } = useContext(CarritoContext); 
-    // Sumo el Total del Carrito
-    // const total = carrito.reduce((acumulador,elemento) => acumulador + parseFloat(elemento.price)*parseInt(elemento.cantidad), 0);
+   
 
     // Funcion para simular el pago
     const mensajeCompra= ()=>{
