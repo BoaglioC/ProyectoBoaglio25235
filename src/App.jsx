@@ -7,6 +7,7 @@ import  Productos from './paginas/Productos';
 import ProductoDetalle from './paginas/ProductoDetalle';
 import Administracion from './paginas/Administracion.jsx';
 import  Carrito from './paginas/Carrito';
+import NotFound from './paginas/NotFound.jsx';
 import { StrictMode} from 'react';
 import { AuthProvider} from './context/AuthContext';
 import ProtectedRoute from './componentes/ProtectedRoute.jsx'
@@ -45,6 +46,9 @@ function App()  {
                       <Route  path="/carrito" element={ <ProtectedRoute soloUser={true}>  <Carrito/>  </ProtectedRoute>  }/>
                       {/* Solo ingresan al CRUD de productos si estan con permiso de admin */}
                       <Route  path="/administracion" element={<ProtectedRoute soloAdmin={true}>  <Administracion/> </ProtectedRoute>}/>
+
+                      {/* En caso de que la ruta no exista */}
+                      <Route path="/*" element={<NotFound />} /> 
 
                     </Routes>
                   </div>
