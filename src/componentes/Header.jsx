@@ -30,7 +30,7 @@ function Header() {
   return (
     <Navbar bg='myBackground' variant='light' sticky='top' expand='lg'>
       <Container>
-            <Navbar.Brand href="#">
+            <Navbar.Brand as={Link} to="/">
               {/* Cargo la imagen y el texto del comercio */}
               <img className='milogo' src={logo} alt="Logo" />
               Electricidad Sur
