@@ -12,7 +12,7 @@ function Descripcion(){
             <h4 className='text-center mb-3'>Te ofrecemos</h4> 
             {/* Implemente las tarjetas de precentación. Como son pocas prefiero repetirlas,
                 si fueran mas tendría que automatizar la carga de datos de las mismas (sería el caso de los productos) */}
-            <div   style={{ display:'flex',flexWrap: 'wrap', marginBottom:'2rem', paddingLeft:'2rem' }}>
+            <div   style={{ display:'flex',flexWrap: 'wrap', marginBottom:'2rem', paddingLeft:'2rem', justifyContent:"center" }}>
                 <TarjetaPresentacion titulo= {"Comprar desde cualquier lugar"} descripcion = {"Suma los productos que precises al carrito. Te los llevamos hasta dónde estés en Argentina."}/>
                 <TarjetaPresentacion titulo= {"Elegir tu medio de pago"} descripcion = {"Aceptamos pagos con tarjeta de débito, crédito o transferencia"}/>
                 <TarjetaPresentacion titulo= {"Recibir tus productos en menos de 48 hs"} descripcion = {"Tus pedidos llegarán seguros. Trabajamos con transportistas con años de servicio a lo largo de nuestro país."}/>

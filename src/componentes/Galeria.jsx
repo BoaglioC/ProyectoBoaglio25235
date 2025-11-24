@@ -42,7 +42,7 @@ function Galeria(){
             return(
                 <>
                     <h4 className='text-center mt-5'>Nuestros productos</h4> 
-                    <Container style={{ display:'flex',flexWrap: 'wrap', marginBottom:'2rem' }}>
+                    <Container style={{ display:'flex',flexWrap: 'wrap', marginBottom:'2rem', justifyContent:"center" }}>
                         {
                             productos.map(producto => 
                             <div key = {producto.id}>
